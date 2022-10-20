@@ -6,5 +6,5 @@ public interface Wrapper {
 
     List<Integer> get();
 
-    Integer sizeOf(List<Integer> list);
+    Long sizeOf(List<Integer> list);
 }
