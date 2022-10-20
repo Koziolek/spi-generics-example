@@ -8,11 +8,11 @@ public class App {
 
     public static void main(String[] args) {
         Wrapper wrapper = WrapperProviderSpi.load().orElseThrow(() -> new RuntimeException("No impl provided"));
-        List<Long> list = wrapper.get();
-        Integer o = wrapper.sizeOf(list);
+        List<Integer> list = wrapper.get();
+        Object size = wrapper.sizeOf(list);
+        System.out.println(size.getClass());
+        Object o = list.get(0);
         System.out.println(o.getClass());
-        Long aLong = list.get(0);
-        System.out.println(aLong);
     }
 
 }
