@@ -4,7 +4,7 @@ import java.util.List;
 
 public interface Wrapper {
 
-    List<Integer> get();
+    List<Long> get();
 
-    Long sizeOf(List<Integer> list);
+    Integer sizeOf(List<Long> list);
 }
